@@ -92,7 +92,7 @@ header li {
 
 header a {
   display: block;
-  color: #3498db;
+  color: cadetblue;
   padding: 10px
 }
 
@@ -253,7 +253,7 @@ footer {
   left: 0;
   right: 0;
   margin: 0 auto;
-  background: #3498db
+  background: cadetblue;
 }
 
 .background-alt {
@@ -309,7 +309,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(33, 125, 187, 0.8);
+  background: rgba(95, 158, 160, 0.8);
   z-index: 1
 }
 
@@ -541,23 +541,11 @@ footer {
   border-radius: 4px
 }
 
-.project-image {
-  float: left
-}
-
-.project-image > span {
-  width: 300px;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.project-image > img {
+  max-width: 100%;
 }
 
 .project-info {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 300px;
   padding: 15px
 }
 
@@ -572,6 +560,20 @@ footer {
   color: #74808a;
   margin: 0 0 15px 0;
   font-size: 0.9em
+}
+
+.project-info ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.project-info .tags-item {
+  display: inline;
+  padding: 5px;
+  border-radius: 5px;
+  background: rgb(95,158,160);
+  color: #fff;
+  font-size: 12px;
 }
 
 .no-image .project-info {
